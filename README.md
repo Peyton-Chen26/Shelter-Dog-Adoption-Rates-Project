@@ -5,5 +5,5 @@ You will find the data used and our initial modeling and EDA in the “Data and 
 
 To replicate this project in AWS:
 1. Store the San Jose Animal Shelter CSV file in an S3 bucket.
-2. In a SageMaker AI Notebook, upload the Jupyter Notebooks “predictions-2.ipynb” and “train_ml_models-3.ipynb”. These notebooks clean the data, train logistic regression and random forest models, and generate prediction scores on each dog in the dataset. The notebooks finish by saving to Amazon RDS, where the animal records and prediction outputs are stored in a structured table.
+2. In a SageMaker AI Notebook, upload the Jupyter Notebooks “predictions-2.ipynb” and “train_ml_models-3.ipynb”. These notebooks clean the data, train logistic regression and random forest models, and generate prediction scores on each dog in the dataset. Run the “train_ml_models-3.ipynb” first, then “predictions-2.ipynb”. The notebooks finish by saving to Amazon RDS, where the animal records and prediction outputs are stored in a structured table.
 3. To create a Tableau dashboard with the data, simply connect Tableau to RDS using MySQL. This dashboard enables shelter staff to immediately glean useful information about any dog they may have in the shelter.
